@@ -1,27 +1,25 @@
-## Laravel PHP Framework
+## iThome Laravel 一日體驗班 todo 應用程式範例程式碼
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Laravel Dojo 於 2016/02 與 iThome 合作舉辦 Laravel 一日體驗班，讓參與的學員在 6 個小時內學習使用 Laravel 5.2 建置一個簡單的 todo 應用程式。此為課程範例程式碼，課程詳細資訊及內容請參考：<http://class.ithome.com.tw/laravel/>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### 警告！
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+#### 這個範例程式碼僅是配合投影片/講義教學順序而撰寫，範例內為引導初學者漸進式學習，許多程式碼並非最佳實踐；程式內的諸多功能、錯誤處理也不完整。目的僅是做為示範與提示，並期能引導學員自行完成不足之處。請勿將這個程式碼佈署至上線機器，若因此造成您的損失恕不負責。
 
-## Official Documentation
+#### 此範例版本為 Laravel 5.2
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### 如何使用範例程式碼
 
-## Contributing
+1. 下載 或 `git clone git@github.com:laravel-dojo/201602-ithome-todo-example.git` 
+2. 打開 Terminal ，切換至 `201602-ithome-todo-example` 資料夾
+3. 執行 `composer install`
+4. 設定您的網站伺服器的文件根目錄 (Document Root) 指向 `201602-ithome-todo-example/public` 並啟動您的網站伺服器
+5. 設定您的 MySQL 資料庫，建立一個新的 todo_local 資料表，啟動您的 MySQL 伺服器
+6. 打開 `.env` 修改 mysql 連線相關設定
+7. 在 Terminal 執行 `php artisan migrate` 確認資料庫連線正確並建立 `migrations` 資料表
+8. 瀏覽應用程式首頁即可
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+### 補充說明
 
-## Security Vulnerabilities
+* 這個範例是參考自 Laravel 官方文件內 [Beginner Task List](https://laravel.com/docs/5.2/quickstart) 教學為基礎修改而成。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
